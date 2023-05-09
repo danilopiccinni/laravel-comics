@@ -13,7 +13,7 @@
             @foreach ($comics as $comic)
             <div class="poster">
                 <img src="{{$comic['thumb'] }}" alt="" class="image-comic-book">
-                <span class="title-comic-book">{{ $comic['title'] }}</span>
+                <span class="title-comic-book"> <a href="{{ route('single-comic')}}"> {{ $comic['title'] }}</a></span>
             </div>
             @endforeach
 
