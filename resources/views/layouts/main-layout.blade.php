@@ -16,12 +16,22 @@
 </head>
 
 <body>
+    <div class="header">
+        @include('partials/header')
+    </div>
 
-    @include('partials/header')
+    <div class="cont-content" >
+        @yield('content')
+    </div>
 
-    @yield('content')
 
-    @include('partials/footer')
+    <div class="footer">
+        @include('partials/footer')
+    </div>
+
+    <div class="sign-up">
+        @include('partials/signUp')
+    </div>
 
 </body>
 
