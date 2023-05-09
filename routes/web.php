@@ -21,7 +21,7 @@ Route::get('/', function () {
     $footerData = config('footer');
     $signUpData = config('signUp');
     $buyData = config('buy');
- 
+
 
     $data = [
         'comics' => $comics,
@@ -73,6 +73,9 @@ Route::get('/single-comic', function () {
         // /signUp
 
     ];
+
+
+    
 
     return view('single-comic' , $data);
 })->name('single-comic');
